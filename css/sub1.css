@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Song Myung', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body {
+    width: 1920px;
+    height: 1080px;
+    overflow-x: hidden;
+    background-color: #C1DEF0;
+    background-repeat:no-repeat;
+}
+
+.wrap{
+    margin: 0 auto;
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+
+header{
+    width:1920px;
+    height:150px;
+    border-radius: 50px;
+   /* border:solid 1px #fff; */
+    margin-top:10px;
+    float:center;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+}
+.logo img{
+    position:absolute;
+    width:130px;
+    left:50px;
+    top:5px;
+}
+
+.nav{
+    width:1920px;
+    color: #494b4a;
+    float: center;
+    text-align: center;
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-left: 20px;
+    padding: 50px 12px 0px 12px;
+}
+
+.nav li a:hover{
+    color:#B04558;
+    border-bottom:2px solid #B04558;
+    padding-bottom:3px;
+
+}
+
+.main_map{
+    display:flex;
+}
+
+.map{
+    width:1000px;
+    height:1080px;
+    position:relative;
+    display:flex;
+}
+
+.map img{
+    position:absolute;
+    top:80px;
+    left:450px;
+    width:1000px;
+}
+
+.hover-img{
+    position:absolute;
+}
+
+.hover1 img{
+    position:absolute;
+    width:290px;
+    left:1000px;
+    top:375px;
+    cursor:pointer;
+}
+
+.hover2 img{
+    position:absolute;
+    width:290px;
+    left:932px;
+    top:255px;
+}
+
+.hover3 img{
+    position:absolute;
+    width:290px;
+    left:840px;
+    top:335px;
+}
+
+
+.hover4 img{
+    position:absolute;
+    width:290px;
+    left:655px;
+    top:400px;
+}
+
+
+.hover5 img{
+    position:absolute;
+    width:290px;
+    left:611px;
+    top:90px;
+}
+
+.main-_box{
+    position:relative;
+}
+
+#myButton1{
+    top: 625px;
+    left: 1120px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #ffe940;
+    opacity: 10;
+    position:absolute;
+    outline:none;
+    border:none;
+    transition: all 0.5s ease;
+}
+
+#myButton1:hover{
+    background-color: #da7945;
+    color:white;
+}
+
+#myImage1{
+    display: none;
+    top:350px;
+    left: 1260px;
+    position: absolute;
+    background-color:white;
+    width:300px;
+    height:300px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 30px;
+} 
+
+#myImage1 p{
+    text-align:left;
+    font-size:15px;
+    line-height:20px;
+    font-weight:bold;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+#myImage1 span{
+    font-size:12px;
+    margin-top:10px;
+}
+
+#myImage1 img{
+    border-radius: 30px 30px 0 0;
+    
+}
+
+#myButton1:hover + #myImage1 {
+    display: block; 
+}
+
+#myButton2{
+    top: 500px;
+    left: 1040px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #ffe940;
+    opacity: 10;
+    position:absolute;
+    outline:none;
+    border:none;
+    transition: all 0.5s ease;
+}
+
+#myButton2:hover{
+    background-color: #da7945;
+    color:white;
+}
+
+#myImage2{
+    display: none;
+    top:160px;
+    left: 1000px;
+    position: absolute;
+    background-color:white;
+    width:300px;
+    height:300px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 30px;
+} 
+
+#myImage2 p{
+    text-align:left;
+    font-size:15px;
+    line-height:20px;
+    font-weight:bold;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+#myImage2 span{
+    font-size:12px;
+    margin-top:10px;
+}
+
+#myImage2 img{
+    border-radius: 30px 30px 0 0;
+}
+
+#myButton2:hover + #myImage2 {
+    display: block; 
+}
+
+
+#myButton3{
+    top: 580px;
+    left: 950px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #ffe940;
+    opacity: 10;
+    position:absolute;
+    outline:none;
+    border:none;
+    transition: all 0.5s ease;
+}
+
+#myButton3:hover{
+    background-color: #da7945;
+    color:white;
+}
+
+#myImage3{
+    display: none;
+    top:720px;
+    left: 900px;
+    position: absolute;
+    background-color:white;
+    width:300px;
+    height:300px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 30px;
+} 
+
+#myImage3 p{
+    text-align:left;
+    font-size:15px;
+    line-height:20px;
+    font-weight:bold;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+#myImage3 span{
+    font-size:12px;
+    margin-top:10px;
+}
+
+#myImage3 img{
+    border-radius: 30px 30px 0 0;
+}
+
+#myButton3:hover + #myImage3 {
+    display: block; 
+}
+
+
+#myButton4{
+    top: 630px;
+    left: 780px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #ffe940;
+    opacity: 10;
+    position:absolute;
+    outline:none;
+    border:none;
+    transition: all 0.5s ease;
+    
+}
+
+#myButton4:hover{
+    background-color: #da7945;
+    color:white;
+}
+
+#myImage4{
+    display: none;
+    top:720px;
+    left: 500px;
+    position: absolute;
+    background-color:white;
+    width:300px;
+    height:300px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 30px;
+} 
+
+#myImage4 p{
+    text-align:left;
+    font-size:15px;
+    line-height:20px;
+    font-weight:bold;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+#myImage4 span{
+    font-size:12px;
+    margin-top:10px;
+}
+
+#myImage4 img{
+    border-radius: 30px 30px 0 0;
+}
+
+#myButton4:hover + #myImage4 {
+    display: block; 
+}
+
+
+#myButton5{
+    top: 300px;
+    left: 700px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #ffe940;
+    opacity: 10;
+    position:absolute;
+    outline:none;
+    border:none;
+    transition: all 0.5s ease;
+}
+
+#myButton5:hover{
+    background-color: #da7945;
+    color:white;
+}
+
+#myImage5{
+    display: none;
+    top:280px;
+    left: 340px;
+    position: absolute;
+    background-color:white;
+    width:300px;
+    height:300px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 30px;
+} 
+
+#myImage5 p{
+    text-align:left;
+    font-size:15px;
+    line-height:20px;
+    font-weight:bold;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+#myImage5 span{
+    font-size:11px;
+    margin-top:10px;
+}
+
+#myImage5 img{
+    border-radius: 30px 30px 0 0;
+}
+
+#myButton5:hover + #myImage5 {
+    display: block; 
+}
+
+footer{
+    width:1920px;
+    height:100px;
+    background-color:#494B4A;
+    color:white;
+    font-size:15px;
+    line-height:30px;
+    text-align:center;
+    font-weight:bold;
+    padding-top:20px;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    top:100;
+}
+
+
+
+
+
+

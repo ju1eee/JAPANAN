@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Song Myung', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 1920px;  
+    height: 1080px;
+    overflow-x: hidden;
+    background-color: #C1DEF0;
+    background-repeat:no-repeat;
+}
+
+.wrap{
+    margin: 0 auto;
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+
+header{
+    width:1920px;
+    height:150px;
+    border-radius: 50px;
+   /* border:solid 1px #fff; */
+    margin-top:10px;
+    float:center;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+}
+.logo img{
+    position:absolute;
+    width:130px;
+    left:50px;
+    top:5px;
+}
+
+.nav{
+    width:1920px;
+    color: #494b4a;
+    float: center;
+    text-align: center;
+}
+
+.nav li{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-left: 20px;
+    padding: 50px 12px 0px 12px;
+}
+
+.nav li a:hover{
+    color:#B04558;
+    border-bottom:2px solid #B04558;
+    padding-bottom:3px;
+
+}
+
+input{
+    display:none;
+}
+
+.book img{
+    width:100%;
+    height:100%;
+}
+
+.book{
+    display:flex;
+    margin:-40px 0 20px 348px;
+}
+
+#cover{
+    width:613px;
+    height:845px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#cover1{
+    width:613px;
+    height:845px;
+    position:absolute;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.flip-book{
+    width:613px;
+    height:845px;
+    position:relative;
+    perspective: 2500px;
+}
+
+.flip{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transform-origin: left;
+    transform-style:preserve-3d;
+    transform:rotateY(0deg);
+    transition: .60s;
+    color:#000;
+}
+
+p{
+    font-size:14px;
+    line-height:10px;
+}
+
+.front{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:#fff;
+    box-sizing:border-box;
+    padding:0 13px;
+    box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,5);
+}
+
+.front h2, p{
+    text-align:center;
+    margin-top:20px;
+}
+
+.front-img{
+    width:230px;
+    height:230px;
+    padding:20px;
+    margin:90px 0px 0px 50px;
+    float:left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.front-img img{
+    box-shadow: 5px 5px 10px gray;
+}
+
+.front-img:hover{
+    transform: scale(1.2);
+}
+
+.back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:99;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+    background-color:#fff;
+}
+
+.back-img{
+    width:230px;
+    height:230px;
+    padding:20px;
+    margin:90px 0px 0px 50px;
+    float:left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.back-img img{
+    box-shadow: 5px 5px 10px gray;
+}
+
+.back h2{
+    font-size:20px;
+}
+
+.back h2, p{
+    text-align:center;
+    margin-top:20px;
+}
+
+.back-img:hover{
+    transform: scale(1.2);
+}
+
+.next-btn{
+    position:absolute;
+    bottom:13px;
+    right:13px;
+    cursor:pointer;
+    color:#fff;
+    width:100px;
+    height:50px;
+    background-color: #B04558;
+    text-align:center;
+    line-height:45px;
+    border-radius: 50px;
+    font-size:18px;
+}
+
+.next-btn:hover{
+    background-color: #7d313f;
+}
+
+.back-btn{
+    position:absolute;
+    bottom:13px;
+    left:13px;
+    cursor:pointer;
+    color:#fff;
+    width:100px;
+    height:50px;
+    background-color: #B04558;
+    text-align:center;
+    line-height:45px;
+    border-radius: 50px;
+    font-size:18px;
+}
+
+.back-btn:hover{
+    background-color: #7d313f;
+}
+
+#p1{
+    z-index:3;
+}
+#p2{
+    z-index:2;
+}
+#p3{
+    z-index:1;
+}
+
+#c1:checked ~ .flip-book #p1{
+    transform:rotateY(-180deg);
+    z-index:1;
+}
+
+#c2:checked ~ .flip-book #p2{
+    transform:rotateY(-180deg);
+}
+
+#c3:checked ~ .flip-book #p3{
+    transform:rotateY(-180deg);
+}
+
+footer{
+    width:1920px;
+    height:100px;
+    background-color:#494B4A;
+    color:white;
+    font-size:15px;
+    line-height:30px;
+    text-align:center;
+    font-weight:bold;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    line-height:30px;
+}
