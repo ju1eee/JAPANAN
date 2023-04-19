@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
     background-color: #C1DEF0;
     background-repeat:no-repeat;
-    background-image: url("/image/sushi.png"), url("/image/conveyor.png");
+    background-image: url("image/sushi.png"), url("image/conveyor.png");
     background-position:bottom, bottom;
     position:relative;
 }
