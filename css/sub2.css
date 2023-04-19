@@ -20,9 +20,6 @@ body {
     height: 1080px;
     overflow-x: hidden;
     background-color: #C1DEF0;
-    background-repeat:no-repeat;
-    background-image: url("/image/sushi.png"), url("/image/conveyor.png");
-    background-position:bottom, bottom;
     position:relative;
 }
 
@@ -30,6 +27,9 @@ body {
     width:1920px;
     height:1080px;
     position:relative;
+    background-repeat:no-repeat;
+    background-image: url("/image/sushi.png"), url("/image/conveyor.png");
+    background-position:bottom, bottom;
 }
 
 .wrap{
